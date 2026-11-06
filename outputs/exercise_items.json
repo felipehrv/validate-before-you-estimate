@@ -1,0 +1,80 @@
+{
+  "hand_coding": [
+    {
+      "bill_id": 443754,
+      "year": 2009,
+      "title": "To amend the Controlled Substances Act to provide for disposal of controlled substances by ultimate users and care takers through State take-back disposal programs, to amend the Federal Food, Drug, and Cosmetic Act to prohibit recommendations on drug labels for disposal by flushing, and for other purposes.",
+      "gold": "Health"
+    },
+    {
+      "bill_id": 370364,
+      "year": 1976,
+      "title": "A bill to supplement retirement benefits for State and local law enforcement officers and firefighters.",
+      "gold": "Law and Crime"
+    },
+    {
+      "bill_id": 236470,
+      "year": 1976,
+      "title": "A bill to amend the Internal Revenue Code of 1954 to provide that employed individuals over age 65 not be required to contribute to the Federal Insurance Contributions Act.",
+      "gold": "Social Welfare"
+    },
+    {
+      "bill_id": 290883,
+      "year": 2015,
+      "title": "A bill to amend the Internal Revenue Code of 1986 to modify and permanently extend qualified zone academy bonds, and to treat such bonds as specified tax credit bonds.",
+      "gold": "Education"
+    },
+    {
+      "bill_id": 448178,
+      "year": 2010,
+      "title": "To provide for certain enhanced border security measures, and for other purposes.",
+      "gold": "Immigration"
+    },
+    {
+      "bill_id": 428827,
+      "year": 2004,
+      "title": "To amend the Omnibus Parks and Public Lands Management Act of 1996 to extend the authorization for certain national heritage areas, and for other purposes.",
+      "gold": "Other"
+    }
+  ],
+  "disputed": [
+    {
+      "bill_id": 313084,
+      "year": 2001,
+      "title": "A bill to make an urgent supplemental appropriation for fiscal year 2001 for the Department of Defense for the Defense Health Program.",
+      "gold": "Health",
+      "model": "Other",
+      "why": "The bill's primary purpose is a supplemental appropriation for the Department of Defense, which falls under the codebook's defense category, even though the funds go to the Defense Health Program."
+    },
+    {
+      "bill_id": 9266,
+      "year": 1989,
+      "title": "To implement the recommendations of the Interagency Committee and the Technical Study Group on Cigarette and Little Cigar Fire Safety, and for other purpose.",
+      "gold": "Other",
+      "model": "Health",
+      "why": "The bill addresses fire safety standards for cigarettes and little cigars, which are tobacco products, so it falls under the Health codebook's tobacco category."
+    },
+    {
+      "bill_id": 425400,
+      "year": 2003,
+      "title": "To amend title II of the Social Security Act to allow the Commissioner of Social Security reasonable discretion in applying the 10-year marriage requirement for entitlement of divorced spouses to spousal benefits in cases in which the divorce is in whole or in part the result of severe spousal or child abuse.",
+      "gold": "Law and Crime",
+      "model": "Social Welfare",
+      "why": "The bill's main purpose is to change eligibility rules for Social Security spousal retirement benefits, which falls under assistance to the elderly, including Social Security benefits; the abuse exception is secondary."
+    },
+    {
+      "bill_id": 10174,
+      "year": 1989,
+      "title": "To amend title 38, United States Code, to extend to recipients of the Medal of Honor eligibility for medical and dental care furnished by the Department of Veterans Affairs.",
+      "gold": "Health",
+      "model": "Other",
+      "why": "The bill's primary purpose is extending veterans' benefit eligibility (Medal of Honor recipients' VA care), which the codebook places under defense and veterans in Other."
+    }
+  ],
+  "gold_error_example": {
+    "bill_id": 415753,
+    "title": "A bill to amend the Torture Victims Relief Act of 1998 to authorize assistance for domestic and foreign programs and centers for the treatment of victims of torture, and for other purposes.",
+    "gold": "Environment",
+    "year": 2007
+  }
+}

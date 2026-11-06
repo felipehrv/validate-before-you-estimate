@@ -1,0 +1,7 @@
+Classify the following U.S. congressional bill title into exactly one of these policy topics:
+
+Health, Education, Environment, Immigration, Law and Crime, Social Welfare, Other
+
+Title: {title}
+
+Answer with a JSON object of the form {"label": "<topic>", "why": "<one short sentence>"} and nothing else.

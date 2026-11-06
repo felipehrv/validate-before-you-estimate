@@ -1,0 +1,502 @@
+{
+  "n_titles": 1650,
+  "composition": {
+    "Health": 162,
+    "Education": 60,
+    "Environment": 78,
+    "Immigration": 23,
+    "Law and Crime": 93,
+    "Social Welfare": 50,
+    "Other": 1184
+  },
+  "showdown": [
+    {
+      "model": "claude-haiku-5-5",
+      "prompt": "prompt_1_names",
+      "accuracy": 0.7327272727272728,
+      "kappa": 0.5640227224658466,
+      "n": 1650
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "prompt": "prompt_2_codebook",
+      "accuracy": 0.8721212121212121,
+      "kappa": 0.7379051685718071,
+      "n": 1650
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "prompt": "prompt_3_codebook_examples",
+      "accuracy": 0.8751515151515151,
+      "kappa": 0.7424133572201558,
+      "n": 1650
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "prompt": "prompt_3_codebook_examples",
+      "accuracy": 0.8896969696969697,
+      "kappa": 0.7644380714514316,
+      "n": 1650
+    }
+  ],
+  "confusion_haiku_p3": {
+    "Health": {
+      "Health": 141,
+      "Education": 0,
+      "Environment": 0,
+      "Immigration": 1,
+      "Law and Crime": 4,
+      "Social Welfare": 3,
+      "Other": 29
+    },
+    "Education": {
+      "Health": 1,
+      "Education": 44,
+      "Environment": 0,
+      "Immigration": 0,
+      "Law and Crime": 1,
+      "Social Welfare": 0,
+      "Other": 12
+    },
+    "Environment": {
+      "Health": 0,
+      "Education": 0,
+      "Environment": 62,
+      "Immigration": 0,
+      "Law and Crime": 1,
+      "Social Welfare": 1,
+      "Other": 23
+    },
+    "Immigration": {
+      "Health": 0,
+      "Education": 0,
+      "Environment": 0,
+      "Immigration": 21,
+      "Law and Crime": 2,
+      "Social Welfare": 0,
+      "Other": 3
+    },
+    "Law and Crime": {
+      "Health": 2,
+      "Education": 1,
+      "Environment": 2,
+      "Immigration": 0,
+      "Law and Crime": 64,
+      "Social Welfare": 0,
+      "Other": 31
+    },
+    "Social Welfare": {
+      "Health": 1,
+      "Education": 3,
+      "Environment": 0,
+      "Immigration": 0,
+      "Law and Crime": 8,
+      "Social Welfare": 37,
+      "Other": 11
+    },
+    "Other": {
+      "Health": 17,
+      "Education": 12,
+      "Environment": 14,
+      "Immigration": 1,
+      "Law and Crime": 13,
+      "Social Welfare": 9,
+      "Other": 1075
+    }
+  },
+  "per_class_haiku_p3": [
+    {
+      "label": "Health",
+      "precision": 0.792,
+      "recall": 0.87,
+      "n_human": 162,
+      "n_model": 178
+    },
+    {
+      "label": "Education",
+      "precision": 0.759,
+      "recall": 0.733,
+      "n_human": 60,
+      "n_model": 58
+    },
+    {
+      "label": "Environment",
+      "precision": 0.713,
+      "recall": 0.795,
+      "n_human": 78,
+      "n_model": 87
+    },
+    {
+      "label": "Immigration",
+      "precision": 0.808,
+      "recall": 0.913,
+      "n_human": 23,
+      "n_model": 26
+    },
+    {
+      "label": "Law and Crime",
+      "precision": 0.64,
+      "recall": 0.688,
+      "n_human": 93,
+      "n_model": 100
+    },
+    {
+      "label": "Social Welfare",
+      "precision": 0.617,
+      "recall": 0.74,
+      "n_human": 50,
+      "n_model": 60
+    },
+    {
+      "label": "Other",
+      "precision": 0.942,
+      "recall": 0.908,
+      "n_human": 1184,
+      "n_model": 1141
+    }
+  ],
+  "by_party_haiku_p3": {
+    "Democrat": {
+      "accuracy": 0.8799,
+      "health_gold": 0.0973,
+      "health_llm": 0.117,
+      "n": 966
+    },
+    "Republican": {
+      "accuracy": 0.868,
+      "health_gold": 0.0979,
+      "health_llm": 0.092,
+      "n": 674
+    }
+  },
+  "by_era_haiku_p3": {
+    "1973-1986": {
+      "accuracy": 0.9048,
+      "health_gold": 0.0552,
+      "health_llm": 0.0705,
+      "n": 525
+    },
+    "1987-2000": {
+      "accuracy": 0.8762,
+      "health_gold": 0.1238,
+      "health_llm": 0.1143,
+      "n": 525
+    },
+    "2001-2016": {
+      "accuracy": 0.8483,
+      "health_gold": 0.1133,
+      "health_llm": 0.135,
+      "n": 600
+    }
+  },
+  "by_party_sonnet_p3": {
+    "Democrat": {
+      "accuracy": 0.8944,
+      "health_gold": 0.0973,
+      "health_llm": 0.0963
+    },
+    "Republican": {
+      "accuracy": 0.8828,
+      "health_gold": 0.0979,
+      "health_llm": 0.089
+    }
+  },
+  "n_hand": 200,
+  "estimates": {
+    "overall": {
+      "truth": 0.09818181818181818,
+      "n_all": 1650,
+      "n_hand": 200,
+      "naive": {
+        "est": 0.10787878787878788,
+        "se": 0.007639582656686111,
+        "ci_low": 0.0929052058716831,
+        "ci_high": 0.12285236988589265
+      },
+      "human": {
+        "est": 0.09,
+        "se": 0.02028688711815402,
+        "ci_low": 0.05768697871453362,
+        "ci_high": 0.13776674613848952,
+        "interval": "wilson"
+      },
+      "corrected": {
+        "est": 0.09287878787878788,
+        "se": 0.013522599994288271,
+        "ci_low": 0.06637449188998287,
+        "ci_high": 0.11938308386759289
+      }
+    },
+    "Democrat": {
+      "truth": 0.09730848861283643,
+      "n_all": 966,
+      "n_hand": 114,
+      "naive": {
+        "est": 0.11697722567287784,
+        "se": 0.01034601143875925,
+        "ci_low": 0.0966990432529097,
+        "ci_high": 0.13725540809284598
+      },
+      "human": {
+        "est": 0.08771929824561403,
+        "se": 0.026611698631971218,
+        "ci_low": 0.04834458359214472,
+        "ci_high": 0.1539744616346682,
+        "interval": "wilson"
+      },
+      "corrected": {
+        "est": 0.09066143619919363,
+        "se": 0.018270044962705054,
+        "ci_low": 0.054852148072291725,
+        "ci_high": 0.12647072432609555
+      }
+    },
+    "Republican": {
+      "truth": 0.09792284866468842,
+      "n_all": 674,
+      "n_hand": 83,
+      "naive": {
+        "est": 0.09198813056379822,
+        "se": 0.011140485742740921,
+        "ci_low": 0.07015277850802601,
+        "ci_high": 0.11382348261957043
+      },
+      "human": {
+        "est": 0.08433734939759036,
+        "se": 0.030688156310438267,
+        "ci_low": 0.04145280918254788,
+        "ci_high": 0.16399711343518372,
+        "interval": "wilson"
+      },
+      "corrected": {
+        "est": 0.09198813056379822,
+        "se": 0.020444284845759792,
+        "ci_low": 0.05191733226610903,
+        "ci_high": 0.1320589288614874
+      }
+    },
+    "1973-1986": {
+      "truth": 0.05523809523809524,
+      "n_all": 525,
+      "n_hand": 63,
+      "naive": {
+        "est": 0.07047619047619047,
+        "se": 0.011181133326543568,
+        "ci_low": 0.04856116915616508,
+        "ci_high": 0.09239121179621586
+      },
+      "human": {
+        "est": 0.015873015873015872,
+        "se": 0.015873015873015872,
+        "ci_low": 0.0028074219075510873,
+        "ci_high": 0.0845872544616561,
+        "interval": "wilson"
+      },
+      "corrected": {
+        "est": 0.038730158730158726,
+        "se": 0.02491576817978351,
+        "ci_low": -0.010104746902216952,
+        "ci_high": 0.0875650643625344
+      }
+    },
+    "1987-2000": {
+      "truth": 0.12380952380952381,
+      "n_all": 525,
+      "n_hand": 72,
+      "naive": {
+        "est": 0.11428571428571428,
+        "se": 0.013898795172392429,
+        "ci_low": 0.08704407574782512,
+        "ci_high": 0.14152735282360343
+      },
+      "human": {
+        "est": 0.16666666666666666,
+        "se": 0.04422874103618961,
+        "ci_low": 0.09799275085321624,
+        "ci_high": 0.26910920902104796,
+        "interval": "wilson"
+      },
+      "corrected": {
+        "est": 0.11428571428571428,
+        "se": 0.024174631620220887,
+        "ci_low": 0.06690343631008135,
+        "ci_high": 0.1616679922613472
+      }
+    },
+    "2001-2016": {
+      "truth": 0.11333333333333333,
+      "n_all": 600,
+      "n_hand": 65,
+      "naive": {
+        "est": 0.135,
+        "se": 0.01396244665263026,
+        "ci_low": 0.1076336045608447,
+        "ci_high": 0.16236639543915532
+      },
+      "human": {
+        "est": 0.07692307692307693,
+        "se": 0.03330866937632457,
+        "ci_low": 0.03330301045885137,
+        "ci_high": 0.16776146218559615,
+        "interval": "wilson"
+      },
+      "corrected": {
+        "est": 0.11961538461538462,
+        "se": 0.020775858756260604,
+        "ci_low": 0.07889470145311384,
+        "ci_high": 0.1603360677776554
+      }
+    }
+  },
+  "sample_size_curve": [
+    {
+      "n_hand_coded": 25,
+      "se": 0.0327,
+      "ci_halfwidth": 0.0641,
+      "human_only_halfwidth": 0.1166
+    },
+    {
+      "n_hand_coded": 50,
+      "se": 0.0257,
+      "ci_halfwidth": 0.0505,
+      "human_only_halfwidth": 0.0825
+    },
+    {
+      "n_hand_coded": 100,
+      "se": 0.0197,
+      "ci_halfwidth": 0.0386,
+      "human_only_halfwidth": 0.0583
+    },
+    {
+      "n_hand_coded": 200,
+      "se": 0.0152,
+      "ci_halfwidth": 0.0298,
+      "human_only_halfwidth": 0.0412
+    },
+    {
+      "n_hand_coded": 400,
+      "se": 0.0121,
+      "ci_halfwidth": 0.0237,
+      "human_only_halfwidth": 0.0292
+    },
+    {
+      "n_hand_coded": 800,
+      "se": 0.0101,
+      "ci_halfwidth": 0.0198,
+      "human_only_halfwidth": 0.0206
+    }
+  ],
+  "sample_size_curve_projected": {
+    "n_group": 10000,
+    "var_model_flag": 0.0963,
+    "var_rectifier": 0.03508,
+    "target_halfwidth": 0.02,
+    "n_for_target_corrected": 371,
+    "n_for_target_human_only": 850,
+    "rows": [
+      {
+        "n_hand_coded": 50,
+        "ci_halfwidth": 0.0523,
+        "human_only_halfwidth": 0.0825
+      },
+      {
+        "n_hand_coded": 100,
+        "ci_halfwidth": 0.0372,
+        "human_only_halfwidth": 0.0583
+      },
+      {
+        "n_hand_coded": 200,
+        "ci_halfwidth": 0.0267,
+        "human_only_halfwidth": 0.0412
+      },
+      {
+        "n_hand_coded": 300,
+        "ci_halfwidth": 0.022,
+        "human_only_halfwidth": 0.0337
+      },
+      {
+        "n_hand_coded": 400,
+        "ci_halfwidth": 0.0193,
+        "human_only_halfwidth": 0.0292
+      },
+      {
+        "n_hand_coded": 800,
+        "ci_halfwidth": 0.0143,
+        "human_only_halfwidth": 0.0206
+      }
+    ]
+  },
+  "band_claude-haiku-5-5": {
+    "precision_in_band": 0.9436936936936937,
+    "recall_in_band": 0.7065767284991569,
+    "n_band": 1483
+  },
+  "band_claude-sonnet-5-5": {
+    "precision_in_band": 0.9503722084367245,
+    "recall_in_band": 0.6458684654300169,
+    "n_band": 1483
+  },
+  "linkage_policies": {
+    "Rules, strict (drop the band)": {
+      "precision": 0.9997673877645964,
+      "recall": 0.8596
+    },
+    "Rules, lenient (keep the band)": {
+      "precision": 0.8459010722933241,
+      "recall": 0.9782
+    },
+    "Rules + Haiku on the band": {
+      "precision": 0.9945182374024879,
+      "recall": 0.9434
+    },
+    "Rules + Sonnet on the band": {
+      "precision": 0.9955338153977031,
+      "recall": 0.9362
+    }
+  },
+  "blocking": {
+    "candidates": 137663,
+    "true_in_candidates": 4987,
+    "sure": 4299,
+    "band": 1483,
+    "band_true": 593,
+    "lost_links": 13,
+    "lost_links_moved_share": 1.0
+  },
+  "moved_truth_candidates_only": 0.15400040104271104,
+  "moved_rate": {
+    "Truth (all true links)": 0.1562,
+    "Rules, strict": 0.1216561991160735,
+    "Rules, lenient": 0.22258734002075406,
+    "Rules + Haiku": 0.14210415348935274,
+    "Rules + Sonnet": 0.13611229264142918
+  },
+  "tokens_titles": {
+    "claude-haiku-5-5|prompt_1_names": {
+      "in": 358917,
+      "out": 228274
+    },
+    "claude-haiku-5-5|prompt_2_codebook": {
+      "in": 1527094,
+      "out": 198430
+    },
+    "claude-haiku-5-5|prompt_3_codebook_examples": {
+      "in": 2822374,
+      "out": 172945
+    },
+    "claude-sonnet-5-5|prompt_3_codebook_examples": {
+      "in": 2822374,
+      "out": 127281
+    }
+  },
+  "tokens_pairs": {
+    "claude-haiku-5-5": {
+      "in": 470970,
+      "out": 262140
+    },
+    "claude-sonnet-5-5": {
+      "in": 471273,
+      "out": 143876
+    }
+  }
+}

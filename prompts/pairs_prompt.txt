@@ -1,0 +1,8 @@
+Two administrative records may refer to the same person. The records come from different files, were typed by different clerks, and may contain typos, missing values, swapped fields, or a changed address. They share no identifier.
+
+Record A: {record_a}
+Record B: {record_b}
+
+Decide whether the two records refer to the same person. Treat small spelling differences, transposed digits, nicknames, and a different postcode with everything else matching as compatible with the same person. Treat a different date of birth together with a different name as different people.
+
+Answer with a JSON object of the form {"match": "yes" or "no", "why": "<one short sentence>"} and nothing else.

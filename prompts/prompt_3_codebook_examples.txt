@@ -1,0 +1,67 @@
+Classify the following U.S. congressional bill title into exactly one policy topic, using the codebook below. The codebook is condensed from the Comparative Agendas Project master codebook. Choose the single topic that best describes the main purpose of the bill. When a bill touches several topics, code the one that is the primary target of the bill.
+
+CODEBOOK
+
+Health: health care reform; health insurance, Medicare and Medicaid; the drug industry and drug approval; hospitals, clinics and other medical facilities; insurance providers; medical liability; the health care workforce; disease prevention and public health; infant and child health; mental health; long-term care; prescription drug coverage and cost; tobacco; treatment and prevention of drug and alcohol abuse; medical research.
+
+Education: higher education and student loans; elementary and secondary schools; education for underprivileged students; vocational education; special education; educational excellence and standards; education research. Student financial aid belongs here.
+
+Environment: drinking water; waste disposal; hazardous waste and toxic substances; air pollution and climate change; recycling; indoor environmental hazards; protection of species and forests; land and water conservation; environmental research. Energy production, farming, and the management of national parks and public lands do NOT belong here.
+
+Immigration: immigration, naturalization and citizenship; refugees and asylum; visas and the admission of foreign workers and students; enforcement of immigration law.
+
+Law and Crime: law enforcement agencies; white collar and organized crime; illegal drug trafficking and drug law enforcement; courts and court administration; prisons and sentencing; juvenile crime; child abuse; family law and domestic violence; the criminal and civil code; crime control; police. Treatment of drug abuse belongs to Health, not here.
+
+Social Welfare: assistance to low-income families, including food assistance; assistance to the elderly, including Social Security retirement benefits; assistance to people with disabilities; charities and volunteer organizations; child care; general social welfare programs.
+
+Other: everything else, including the economy and taxes, civil rights, agriculture, labor and employment, energy, transportation, housing, commerce, defense and veterans, science and technology, trade, foreign affairs, government operations, commemorative bills, the naming of federal buildings, public lands and parks, arts and culture, and bills for the relief of named individuals.
+
+EXAMPLES CODED BY TRAINED HUMAN CODERS
+
+Title: A bill to amend the Public Health Service Act to increase the authorization for fiscal year 1984 for primary care block grants.
+Label: Health
+
+Title: A bill to amend title XVIII of the Social Security Act to provide medicare beneficiaries with additional information regarding medicare managed care plans and medicare select policies.
+Label: Health
+
+Title: A bill to extend the Education of the Handicapped Act for three years.
+Label: Education
+
+Title: To amend the Higher Education Act of 1965 to allow an individual to qualify for both teacher loan forgiveness and public service loan forgiveness, and for other purposes.
+Label: Education
+
+Title: To amend the Federal Water Pollution Control Act and the Safe Drinking Water Act to provivde protection for sole source aquifers.
+Label: Environment
+
+Title: To amend the Comprehensive Environmental Response, Compensation, and Liability Act of 1980 to clarify liability under that Act for certain recycling transactions.
+Label: Environment
+
+Title: A bill to limit the grounds and improve the process for excluding aliens from the United States.
+Label: Immigration
+
+Title: To amend the Immigration and Nationality Act to permit certain aliens who are at least 55 years of age to obtain a 4-year nonimmigrant visitor's visa.
+Label: Immigration
+
+Title: A bill to amend section 924(c) of title 18 of the United States Code to modify additional penalties for certain felonies committed with firearms.
+Label: Law and Crime
+
+Title: A bill to amend title 28 of the United States Code to increase the number of U.S. district court judges and for other purposes.
+Label: Law and Crime
+
+Title: A bill to amend the Food Stamp Act of 1977 and the Internal Revenue Code of 1954, and for other purposes.
+Label: Social Welfare
+
+Title: To amend the Mineral Leasing Act to make available for the low-income home energy assistance program 5 percent of moneys received by the United States from onshore Federal oil and gas development.
+Label: Social Welfare
+
+Title: A bill entitled the Recreational Boating Safety Program Funding Improvement Act.
+Label: Other
+
+Title: A bill to protect the voting rights of homeless citizens.
+Label: Other
+
+NOW CODE THIS TITLE
+
+Title: {title}
+
+Answer with a JSON object of the form {"label": "<topic>", "why": "<one short sentence>"} and nothing else.
